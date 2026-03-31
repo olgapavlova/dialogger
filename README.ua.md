@@ -1,3 +1,5 @@
+<img width="440" height="280" alt="dialogger-promo" src="https://github.com/user-attachments/assets/083b12cb-e278-4652-9fd5-cf8ee59bdacd" />
+
 [English](README.md) — [Русский](README.ru.md) — Українська — [עברית](README.he.md) — [Deutsch](README.de.md)
 
 # `dialogger` • Експортує діалог ChatGPT у Markdown-файл
