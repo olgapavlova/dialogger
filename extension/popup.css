@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font: 13px/1.4 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  width: 280px;
+}
+
+.wrap {
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hint {
+  margin: 0;
+  opacity: 0.85;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid color-mix(in oklab, CanvasText 14%, transparent);
+  background: color-mix(in oklab, CanvasText 6%, transparent);
+  color: CanvasText;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: color-mix(in oklab, CanvasText 10%, transparent);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  min-height: 18px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+

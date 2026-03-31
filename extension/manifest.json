@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "dialogger",
+  "version": "1.0.0",
+  "description": "Exports a ChatGPT conversation to a Markdown file.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "dialogger",
+    "default_popup": "popup.html"
+  }
+}
