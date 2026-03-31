@@ -1,3 +1,5 @@
+English — [Русский](README.ru.md) — [Українська](README.ua.md) — [עברית](README.he.md) — [Deutsch](README.de.md)
+
 # `dialogger` • Exports a ChatGPT conversation to a Markdown file
 > Sometimes you want to save a long ChatGPT conversation into a separate file — and then work with that file later.
 
@@ -27,4 +29,3 @@ The exporter code lives in `extension/exporter.js`.
 1. Split into two modes: print the conversation to the console vs. save to a file.
 2. Improve the part where HTML is converted to Markdown.
 3. Export images too (not needed so far).
-

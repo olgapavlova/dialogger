@@ -1,3 +1,5 @@
+[English](README.md) — Русский — [Українська](README.ua.md) — [עברית](README.he.md) — [Deutsch](README.de.md)
+
 # `dialogger` • Сохраняет ChatGPT-диалог в Markdown-файл
 > Длинные диалоги с ChatGPT хочется сохранить в отдельный файл — и потом с этим файлом работать.
 
