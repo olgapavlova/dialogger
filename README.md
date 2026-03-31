@@ -19,8 +19,8 @@
 
 ### Использование
 1. Откройте нужный диалог на `chatgpt.com` (или `chat.openai.com`).
-2. Нажмите иконку расширения `dialogger` → **Export to Markdown**.
-3. В Downloads появится файл `chatgpt_export_<timestamp>.md`.
+2. Нажмите иконку расширения `dialogger`.
+3. В Downloads появится файл `chatgpt_export_<YYYY-MM-DD-HH-MM-SS>.md`.
 
 Код экспортера находится в `extension/exporter.js`.
 ## Что можно допиливать и изменять
