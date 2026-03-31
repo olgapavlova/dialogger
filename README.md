@@ -1,27 +1,30 @@
-# `dialogger` • Сохраняет ChatGPT-диалог в Markdown-файл
-> Длинные диалоги с ChatGPT хочется сохранить в отдельный файл — и потом с этим файлом работать.
+# `dialogger` • Exports a ChatGPT conversation to a Markdown file
+> Sometimes you want to save a long ChatGPT conversation into a separate file — and then work with that file later.
 
-## Простые неправильные решения
-1. Сохранить страницу из браузера. Не срабатывает.
-2. Сохранить диалог из приложения ChatGPT. Такой функциональности нет.
-3. Выделить весь контент страницы (руками или автоматически) и скопировать его в буфер. Действие «Выделить весь контент страницы» не приводит к результату: в каждый момент времени только часть контента находится в статусе «Показывать», а большая часть диалога скрыта или даже не подгружена с сервера.
-4. Копировать с помощью специальной кнопки каждый ответ отдельно. Можно, и даже можно автоматически сохранять скопированное в файл (например, средствами [системы быстрых команд](https://support.apple.com/ru-ru/guide/shortcuts-mac/welcome/mac)) — но при этом не копируются вопросы, и диалог становится непонятным.
-5. Создать букмарклет (или просто вставлять скрипт в страницу), который листает диалог и сохраняет всё в файл. Такой код работает в контексте страницы и часто упирается в ограничения (в т. ч. [CSP](https://developer.mozilla.org/ru/docs/Glossary/CSP)). Расширение Chrome решает это, потому что исполняет код как content script.
-## Работающее решение
-Расширение Chrome (Manifest V3) запускает экспорт из активной вкладки одним кликом.
+## Simple but wrong solutions
+1. Save the page from the browser. Doesn’t work.
+2. Save the conversation from the ChatGPT app. There is no such feature.
+3. Select all content on the page (manually or automatically) and copy it to the clipboard. “Select all” won’t give you the full conversation: at any moment only part of the content is visible, while most of it is hidden or not even loaded from the server yet.
+4. Copy each assistant answer using a special button. You can even automatically save what you copied into a file (for example with [Shortcuts](https://support.apple.com/guide/shortcuts-mac/welcome/mac)) — but your questions won’t be included, and the conversation becomes hard to follow.
+5. Create a bookmarklet (or just paste a script into the page) that scrolls the conversation from the start and saves everything into a file. Such code runs in the page context and often hits limitations (including [CSP](https://developer.mozilla.org/docs/Glossary/CSP)). A Chrome extension solves this because it executes the code as a content script.
 
-### Установка (developer mode)
-1. Откройте `chrome://extensions`.
-2. Включите **Developer mode**.
-3. Нажмите **Load unpacked** и выберите папку `extension/` из этого репозитория.
+## A working solution
+A Chrome Extension (Manifest V3) runs the export from the active tab with a single click.
 
-### Использование
-1. Откройте нужный диалог на `chatgpt.com` (или `chat.openai.com`).
-2. Нажмите иконку расширения `dialogger`.
-3. В Downloads появится файл `chatgpt_export_<YYYY-MM-DD-HH-MM-SS>.md`.
+### Install (developer mode)
+1. Open `chrome://extensions`.
+2. Enable **Developer mode**.
+3. Click **Load unpacked** and select the `extension/` folder from this repository.
 
-Код экспортера находится в `extension/exporter.js`.
-## Что можно допиливать и изменять
-1. Разделить на два режима — вывод диалога в консоль и сохранение диалога в файл.
-2. Тюнинг той части кода, где HTML конвертируется в Markdown.
-3. Сохранять ещё и картинки. Пока потребности не было.
+### Usage
+1. Open the conversation you want on `chatgpt.com` (or `chat.openai.com`).
+2. Click the `dialogger` extension icon.
+3. A file named `chatgpt_export_<YYYY-MM-DD-HH-MM-SS>.md` will appear in Downloads.
+
+The exporter code lives in `extension/exporter.js`.
+
+## Things you can improve
+1. Split into two modes: print the conversation to the console vs. save to a file.
+2. Improve the part where HTML is converted to Markdown.
+3. Export images too (not needed so far).
+
