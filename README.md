@@ -1,5 +1,3 @@
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-
 # `dialogger` • Сохраняет ChatGPT-диалог в Markdown-файл
 > Длинные диалоги с ChatGPT хочется сохранить в отдельный файл — и потом с этим файлом работать.
 
