@@ -26,8 +26,3 @@ A Chrome Extension (Manifest V3) runs the export from the active tab with a sing
 3. A file named `chatgpt_export_<YYYY-MM-DD-HH-MM-SS>.md` will appear in Downloads.
 
 The exporter code lives in `extension/exporter.js`.
-
-## Things you can improve
-1. Split into two modes: print the conversation to the console vs. save to a file.
-2. Improve the part where HTML is converted to Markdown.
-3. Export images too (not needed so far).
