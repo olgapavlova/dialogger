@@ -5,7 +5,7 @@ English — [Русский](README.ru.md) — [Українська](README.ua.
 # `dialogger` • ChatGPT conversation → Markdown file
 > Sometimes you want to save a long ChatGPT conversation into a separate file — and then work with that file later.
 
-## Simple but wrong solutions
+## Simple but wrong ideas
 1. Save the page from the browser. Doesn’t work.
 2. Save the conversation from the ChatGPT app. There is no such feature.
 3. Select all content on the page (manually or automatically) and copy it to the clipboard. “Select all” won’t give you the full conversation: at any moment only part of the content is visible, while most of it is hidden or not even loaded from the server yet.
