@@ -2,7 +2,7 @@
 
 English — [Русский](README.ru.md) — [Українська](README.ua.md) — [עברית](README.he.md) — [Deutsch](README.de.md)
 
-# `dialogger` • Exports a ChatGPT conversation to a Markdown file
+# `dialogger` • ChatGPT conversation → Markdown file
 > Sometimes you want to save a long ChatGPT conversation into a separate file — and then work with that file later.
 
 ## Simple but wrong solutions
