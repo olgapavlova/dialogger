@@ -16,7 +16,7 @@ English — [Русский](README.ru.md) — [Українська](README.ua.
 A Chrome Extension (Manifest V3) runs the export from the active tab with a single click.
 
 ### Install (developer mode)
-1. Open `chrome://extensions`.
+1. Open [chrome://extensions](chrome://extensions) (Google Chrome only).
 2. Enable **Developer mode**.
 3. Click **Load unpacked** and select the `extension/` folder from this repository.
 
